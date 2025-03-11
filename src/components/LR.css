@@ -1,0 +1,55 @@
+.login-container, .register-container {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .LR input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .LR button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .LR button:hover {
+    background: #0056b3;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background: #ff8800;
+    padding: 8px 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .login-link:hover {
+    background: #ff6600;
+  }
+  
+  .lk{
+    color: #60b0ff;
+  }

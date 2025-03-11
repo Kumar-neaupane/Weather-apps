@@ -1,0 +1,156 @@
+/* Apply a gradient background */
+body {
+ /*background: linear-gradient(to right, #1e3c72, #2a5298);*/
+ background: 
+ linear-gradient(
+   rgba(20, 100, 200, 0.8),  /* Semi-transparent black gradient */
+   rgba(0, 0, 0, 0.8)    /* Same opacity for both ends */
+ ),
+ url('/src/assets/images/pic.jpg');
+ background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 135vh; /* Ensure the body takes full height */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  max-height: 100vh;
+}
+
+/* Weather container styling */
+.weather-container {
+max-height: 100vh;
+max-width: 600px;
+margin-top: 0px;
+
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Centers text inside */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements */
+  justify-content: center;
+
+}
+
+
+/* Styling the search box */
+.search-box {
+position: relative;
+top: 0px;
+
+}
+
+.weather-container input {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.weather-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-container button:hover {
+  background: #ff5722;
+}
+
+/* Weather card styling */
+.weather-card {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.weather-card p {
+  font-size: 18px;
+}
+
+/* Forecast section */
+.forecast-container {
+  margin-top: 20px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.forecast-card {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.scl{
+  max-height: 500px; /* You can set any height you prefer */
+  overflow-y: auto; /* Allows vertical scrolling */
+  margin-top: 30px;
+}
+
+
+
+/* Chart container to make the graph stand out */
+.chart-container {
+  width: 80%;
+  height: 400px;  /* Adjust based on your preference */
+  background: rgba(0, 0, 0, 0.5);  /* Dark background to make chart visible */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+/* Ensure the text is legible inside the chart */
+.chart-container canvas {
+  background-color: rgb(255, 255, 255); /* Light overlay behind the chart */
+}
+.chart-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
